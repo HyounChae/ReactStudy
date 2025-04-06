@@ -33,33 +33,36 @@ function App() {
         <div className="nav__container">
           <div className="nav">
             <div className="nav__left">
-              <div class="nav__digital" data-url_path="digital">
+              <div className="nav_leftbutton">
+              <a class="nav__digital" data-url_path="digital">
                 디지털
-              </div>
-              <div class="nav__computer" data-url_path="computer">
+              </a>
+              <a class="nav__computer" data-url_path="computer">
                 컴퓨터
-              </div>
-              <div class="nav__electronic" data-url_path="electronic">
+              </a>
+              <a class="nav__electronic" data-url_path="electronic">
                 가전
-              </div>
-              <div class="nav__beauty" data-url_path="beauty">
+              </a>
+              <a class="nav__beauty" data-url_path="beauty">
                 뷰티
-              </div>
-              <div class="nav__fashion" data-url_path="fashion">
+              </a>
+              <a class="nav__fashion" data-url_path="fashion">
                 패션
-              </div>
-              <div class="nav__fashionacc" data-url_path="fashionacc">
+              </a>
+              <a class="nav__fashionacc" data-url_path="fashionacc">
                 패션잡화
-              </div>
-              <div class="nav__smartphone" data-url_path="smartphone">
+              </a>
+              <a class="nav__smartphone" data-url_path="smartphone">
                 스마트폰
-              </div>
-              <div class="nav__lifestyle" data-url_path="lifestyle">
+              </a>
+              <a class="nav__lifestyle" data-url_path="lifestyle">
                 라이프스타일
+              </a>
               </div>
             </div>
 
             <div class="nav__right">
+              <div class="nav_rightbutton">
               <a class="nav__content" href="/content">
                 콘텐츠
               </a>
@@ -69,6 +72,7 @@ function App() {
               <a class="nav__brand" href="/brand">
                 브랜드
               </a>
+              </div>
             </div>
           </div>
         </div>
@@ -82,6 +86,6 @@ export default App;
   
 
 const Header = styled.div`
-    display:center;
+    
 
 `;
