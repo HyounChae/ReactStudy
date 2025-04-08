@@ -6,59 +6,87 @@
   text-align: center;
 }
 
-.template {
+/* .template {
   height: 88px;
   max-width: 1032px;
   width: calc(100% - 64px);
   margin: 0 auto;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-.header-container {
+*:hover {
+  cursor: pointer;
+}
+
+header {
+  height: 88px;
   border-bottom: 1px solid #ecedf1;
+  display: block;
+  unicode-bidi: isolate;
+  color: #222;
+  font-size: 16px;
 }
 
-.header {
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.header_container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ecedf1;
-  color: #787a87;
+  height: 88px;
+  margin: 0 auto;
+  /* width: calc(100%-64px); */
+  width: 80.625%;
+  max-width: 1032px;
+}
+
+h1 {
+  flex: auto;
+  max-width: 377px;
+  margin: 32px;
+  text-indent: -9999px;
+  height: 88px;
+  line-height: 88px;
+  font-weight: normal;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .logo {
-  display: block;
-  max-width: 377px;
-  width: 281px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(https://static.univstore.com/web/image/logo.png);
   background-size: contain;
-  background-image: url("https://static.univstore.com/web/image/logo.png");
-  cursor: pointer;
-  text-indent: -9999px;
-  line-height: 88px;
-}
-
-.nav {
-  display: flex;
-}
-
-.nav__search,
-.nav__login {
-  display: block;
-  line-height: 88px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 281px;
   height: 88px;
-  margin-right: 32px;
-  font-size: 13px;
+  display: block;
 }
 
-.nav__my,
-.nav__cart {
-  display: none;
+nav {
+  display: flex;
+  height: 88px;
+  line-height: 88px;
+  unicode-bidi: isolate;
 }
 
-.nav__login {
-  margin-right: 0;
-}
 
 /* 드롭다운바 */
 .dropdown-container {
@@ -181,116 +209,84 @@
   transition: background-color linear 300ms;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .template {
     height: 64px;
     width: calc(100% - 32px);
-  }
+  } */
 
-  /* .header {
+  .header {
     height: 64px;
     width: calc(100% - 32px);
+    max-width: 1032px;
     margin: 0 auto;
-  } */
+  }
+
   .logo {
     width: 252.58px;
   }
 
-  .nav__search,
-  .nav__login,
-  .nav__my,
-  .nav__cart {
-    display: block;
-    width: 36px;
-    height: 36px;
-    margin: 14px 0;
-    text-indent: -9999px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  .account {
+    color: #787a87;
+    font-size: 13px;
+} 
 
-  .nav__search {
+.account_search {
+    margin-right: 32px;
     background-image: url("https://static.univstore.com/web/image/ic-search-item.png");
-  }
-
-  .nav__login {
-    display: none;
-    margin: 0;
-  }
-
-  .nav__my {
-    background-image: url("https://static.univstore.com/web/image/ic-mypage.png");
-  }
-
-  .nav__cart {
-    /* margin-right: 0; */
-    background-image: url("https://static.univstore.com/web/image/ic-shoppingbag.png");
-  }
 }
 
-/* 컨테이너 */
-.nav__container {
-  border-bottom: 1px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  padding: 21px 9px;
-  font-size: 15px;
-  font-weight: 700;
+.account_login {
+    margin-right: 0;
+    text-decoration: none;
+}
 
+.account_mypage {
+    display: none;
+    margin-right: 32px;
+    background-image: url("https://static.univstore.com/web/image/ic-mypage.png");
+}
+
+.account_cart {
+    display: none;
+    background-image: url("https://static.univstore.com/web/image/ic-shoppingbag.png");
+} 
+
+/* 컨테이너 */
+.nav_container {
+  border-bottom: 1px solid #ecedf1;
+  line-height: 1.2;
 }
 
 .nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: auto;
-  padding: 21px 9px;
-  font-size: 15px;
-  font-weight: 700;
-
+  align-items: center;
+  margin: 0 auto;
+  width: 80.625%;
+  max-width: 1032px;    
 }
 
-.nav__left {
+.nav_left {
   display: flex;
   margin-left: -12px;
-  margin: 0px;
-  padding: 0px;
-  border: 0;
-  font-size: 16px;
-  font-weight: 700;
-
 }
 
-.nav__right {
-  margin-right: -12px;
-  padding: 21px 9px;
-  font-size: 16px;
-  line-height: 1.2;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.nav__leftbutton {
+.nav_leftbutton {
   padding: 21px 9px;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
   font-weight: 700;
-  line-height: 1.2;
 }
 
+.nav_right {
+  margin-right: -12px;
+}
 
-
-.nav__rightbutton {
+.nav_rightbutton {
   padding: 21px 9px;
   display: inline-block;
   font-size: 15px;
   font-weight: 700;
 }
-
